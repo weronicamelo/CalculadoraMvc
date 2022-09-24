@@ -18,18 +18,22 @@ public class CalculadoraController : Controller
         switch(tipoOperacao)
         {
             case "soma":
+                ViewBag.Titulo = $"Soma";
                 ViewBag.Resultado = $"Soma = {n1 + n2}";
                 break;
         
             case "subtracao": 
+                ViewBag.Titulo = $"Subtração";
                 ViewBag.Resultado = $"Subtração = {n1 - n2}";
                 break;
             
             case "multiplicacao":
+                ViewBag.Titulo = $"Multiplicação";
                 ViewBag.Resultado = $"Multiplicação = {n1 * n2}";
                 break;
             
             case "divisao":
+                ViewBag.Titulo = $"Divisão";
                 ViewBag.Resultado = $"Divisão = {n1 / n2}";
                 break;
 
